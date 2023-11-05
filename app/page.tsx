@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import {
   Select,
   SelectContent,
@@ -50,8 +49,6 @@ const App = () => {
       confirmPassword: '',
     },
   });
-
-  console.log(form.watch());
 
   const onSumbit = (data: AuthForm) => {
     if (data.password !== data.confirmPassword) {
